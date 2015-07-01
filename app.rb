@@ -53,3 +53,5 @@ class App < Sinatra::Base
     'You can cook "最高のご飯" !!'
   end
 end
+
+run App.run!
