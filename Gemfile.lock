@@ -42,6 +42,7 @@ GEM
     builder (3.2.3)
     byebug (9.0.6)
     concurrent-ruby (1.0.5)
+    diffy (3.1.0)
     erubi (1.6.0)
     ffi (1.9.18)
     globalid (0.3.7)
@@ -97,6 +98,9 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
+    ridgepole (0.6.5.beta14)
+      activerecord (>= 4.2, < 6)
+      diffy
     ruby_dep (1.5.0)
     spring (2.0.1)
       activesupport (>= 4.2)
@@ -131,6 +135,7 @@ DEPENDENCIES
   mysql2 (>= 0.3.18, < 0.5)
   puma (~> 3.7)
   rails (~> 5.1.0.rc1)
+  ridgepole
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
