@@ -13,7 +13,15 @@ Things you may want to cover:
 
 * Database creation
 
+```
+bundle exec rake db:create
+```
+
 * Database initialization
+
+```
+bundle exec rake ridgepole:apply
+```
 
 * How to run the test suite
 

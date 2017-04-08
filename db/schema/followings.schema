@@ -1,0 +1,8 @@
+create_table "followings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC" do |t|
+  t.integer "user_id", null: false
+  t.integer "following_user_id", null: false
+  t.datetime "created_at"
+  t.index ["following_user_id"], name: "index_followings_on_following_user_id"
+  t.index ["user_id", "following_user_id"], name: "index_followings_on_user_id_and_following_user_id", unique: true
+end
+# vi: set ft=ruby:

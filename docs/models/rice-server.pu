@@ -1,0 +1,98 @@
+left to right direction
+hide circle
+
+class users {
+  - id
+  screen_name
+  created_at
+}
+
+class followings {
+  - id
+  user_id
+  following_user_id
+  created_at
+}
+
+class recipes {
+  - id
+  user_id
+  photo_id
+  condition_id
+  rate
+  created_at
+  updated_at
+}
+
+class rices {
+  - id
+  brand_id
+  polished_ratio
+}
+
+class conditions {
+  - id
+  temperature
+  humidity
+}
+
+class ingredients {
+  - id
+  recipe_id
+  name
+  amount
+  unit
+}
+
+class steps {
+  - id
+  type_id
+  recipe_id
+  elapsed_time
+}
+
+class types {
+  - id
+  name
+}
+
+class photos {
+  - id
+  url
+}
+
+class likes {
+  - id
+  user_id
+  recipe_id
+  created_at
+}
+
+class comments {
+  - id
+  user_id
+  recipe_id
+  content
+  created_at
+  updated_at
+}
+
+class brands {
+  - id
+  name
+}
+
+followings --o users
+followings o-- users
+likes o-- users
+recipes o-- users
+rices o-- recipes
+conditions --- recipes
+photos --- recipes
+ingredients o-- recipes
+likes o-- recipes
+steps o-- recipes
+types --o steps
+comments o-- users
+recipes --o comments
+rices o-- brands

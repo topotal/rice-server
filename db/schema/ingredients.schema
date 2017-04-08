@@ -1,0 +1,8 @@
+create_table "ingredients", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC" do |t|
+  t.integer "recipe_id", null: false
+  t.string "name", null: false
+  t.string "unit", null: false
+  t.float "amount", null: false
+  t.index "recipe_id", name: "index_ingredients_on_recipe_id"
+end
+# vi: set ft=ruby:

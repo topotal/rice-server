@@ -1,0 +1,6 @@
+create_table "rices", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC" do |t|
+  t.integer "brand_id", null: false
+  t.float "polished_ratio", null: false
+  t.index "brand_id", name: "index_rices_on_brand_id"
+end
+# vi: set ft=ruby:
