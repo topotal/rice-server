@@ -1,0 +1,10 @@
+create_table "recipes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC" do |t|
+  t.integer "user_id", null: false
+  t.integer "photo_id", null: false
+  t.integer "condition_id", null: false
+  t.integer "rate", null: false
+  t.datetime "created_at"
+  t.datetime "updated_at"
+  t.index ["user_id", "created_at"], name: "index_recipe_items_on_user_id_and_created_at"
+end
+# vi: set ft=ruby:

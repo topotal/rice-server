@@ -1,0 +1,5 @@
+create_table "conditions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC" do |t|
+  t.float "temperature", null: false
+  t.float "humidity", null: false
+end
+# vi: set ft=ruby:

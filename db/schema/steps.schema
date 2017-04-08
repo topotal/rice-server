@@ -1,0 +1,9 @@
+create_table "steps", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC" do |t|
+  t.string "screen_name", null: false
+  t.integer "recipe_id", null: false
+  t.integer "type_id", null: false
+  t.integer "elapsed_time", null: false
+  t.datetime "created_at"
+  t.index "recipe_id", name: "index_steps_on_recipe_id"
+end
+# vi: set ft=ruby:
