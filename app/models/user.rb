@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :recipe
+  has_many :recipes
   has_many :likes
   has_many :comments
   has_many :followings_within_oneself, class_name: 'Following', foreign_key: 'user_id'
